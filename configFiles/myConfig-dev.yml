@@ -1,3 +1,3 @@
 spring:
   kafka:
-    host: 10.202.162.8
+    host: 测试
