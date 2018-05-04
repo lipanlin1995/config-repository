@@ -1,7 +1,16 @@
 spring:
   kafka:
     host: 1110
-    
+
+spring:
+  application:
+    name: myConfig
+
+#端口配置
+server:
+  port: 7210
+  context-path: /${spring.application.name}
+  
 #rabbitmq连接配置
   rabbitmq:
     host: localhost
