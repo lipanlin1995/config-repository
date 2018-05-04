@@ -2,18 +2,6 @@ spring:
   kafka:
     host: 1110
     
-#应用名称、环境配置  
-spring:
-  application:
-    name: myConfig
-  profiles:
-    active: dev	
-  cloud: 
-    config: 
-      uri: http://localhost:8888/
-      lable: master
-      profile: ${spring.profiles.active}
-
 #rabbitmq连接配置
   rabbitmq:
     host: localhost
