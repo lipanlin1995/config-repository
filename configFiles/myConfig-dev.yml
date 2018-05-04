@@ -1,11 +1,7 @@
 spring:
   kafka:
     host: 10.202.169.88
-
-#端口配置
-server:
-  port: 7210
-  
+    
 #rabbitmq连接配置
   rabbitmq:
     host: localhost
