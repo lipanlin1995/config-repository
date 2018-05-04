@@ -7,7 +7,6 @@ spring:
     url: jdbc:oracle:thin:@ordb.dev.bl.com:1521:devdb  
     username: product  
     password: product_2316   
-    poolName: formal_source
     driver-class-name: oracle.jdbc.driver.OracleDriver
     maxActive: 30
     initialSize: 1
