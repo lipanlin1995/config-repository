@@ -1,7 +1,20 @@
 spring:
   kafka:
     host: 10.202.162.9
-    
+
+#数据库连接配置
+  dataSource:
+    url: jdbc:oracle:thin:@ordb.dev.bl.com:1521:devdb  
+    username: product  
+    password: product_2316   
+    poolName: formal_source
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    maxActive: 30
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    connectionTimeout: 10000
+
 #rabbitmq连接配置
   rabbitmq:
     host: localhost
