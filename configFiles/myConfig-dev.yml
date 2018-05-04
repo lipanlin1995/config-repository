@@ -1,6 +1,6 @@
 spring:
   kafka:
-    host: ddddddd
+    host: 刷新OK
 
 #端口配置
 server:
