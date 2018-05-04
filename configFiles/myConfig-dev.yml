@@ -13,7 +13,7 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${spring.cloud.config.uri}/configServer/eureka/
+      defaultZone: ${spring.cloud.config.uri}/eureka/
     healthcheck:
       enabled: true
   #instance:
