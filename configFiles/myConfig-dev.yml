@@ -2,25 +2,3 @@ spring:
   kafka:
     host: 1110
     
-#rabbitmq连接配置
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
-#eureka客户端配置
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${spring.cloud.config.uri}/eureka/
-    healthcheck:
-      enabled: true
-  #instance:
-    #lease-renewal-interval-in-seconds: 30
-    #lease-expiration-duration-in-seconds: 10
-    
-#关闭内置接口请求安全校验
-management:
-  security:
-    enabled: false
