@@ -1,6 +1,6 @@
 spring:
   kafka:
-    host: 10.202.162.8
+    host: 10.202.162.9
     
 #rabbitmq连接配置
   rabbitmq:
