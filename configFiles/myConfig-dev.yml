@@ -18,6 +18,18 @@ spring:
       lable: master
       profile: ${spring.profiles.active}
 
+#数据库连接配置
+  dataSource:
+    url: jdbc:oracle:thin:@ordb.dev.bl.com:1521:devdb  
+    username: product  
+    password: product_2316   
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    maxActive: 30
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    connectionTimeout: 10000
+    
 #kafka消息中间件
   kafka:
     consumer:
@@ -35,18 +47,6 @@ spring:
       concurrency: 10
       group:
         id: kafka-demo
-
-#数据库连接配置
-  dataSource:
-    url: jdbc:oracle:thin:@ordb.dev.bl.com:1521:devdb  
-    username: product  
-    password: product_2316   
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    maxActive: 30
-    initialSize: 1
-    maxWait: 60000
-    minIdle: 1
-    connectionTimeout: 10000
 
 #rabbitmq连接配置
   rabbitmq:
