@@ -59,7 +59,7 @@ eureka:
 management:
   security:
     enabled: false
-#关闭feign对熔断器的支持
+#开启feign对熔断器的支持
 feign: 
   hystrix:
     enabled: true
