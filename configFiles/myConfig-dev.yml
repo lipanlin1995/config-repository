@@ -54,7 +54,11 @@ eureka:
     #lease-renewal-interval-in-seconds: 30
     #lease-expiration-duration-in-seconds: 10
     
-#关闭内置接口请求安全校验
+#关闭bus封装接口的请求安全校验
 management:
   security:
+    enabled: false
+#关闭feign对熔断器的支持
+feign: 
+  hystrix:
     enabled: false
