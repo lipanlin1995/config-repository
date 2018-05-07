@@ -62,4 +62,4 @@ management:
 #开启feign对熔断器的支持
 feign: 
   hystrix:
-    enabled: false
+    enable: false
