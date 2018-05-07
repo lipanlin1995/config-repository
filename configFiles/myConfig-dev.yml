@@ -1,6 +1,6 @@
 #日志配置
 logging:
-  file: D:\springCloud-server.log
+  file: D:\config-client.log
   level: 
     root: WARN
     com.bailian: INFO
