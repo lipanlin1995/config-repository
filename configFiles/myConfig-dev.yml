@@ -7,7 +7,7 @@ logging:
     org.springframework: INFO
     
 #数据库配置
-spring
+spring:
   dataSource:
     url: jdbc:oracle:thin:@ordb.dev.bl.com:1521:devdb  
     username: product  
