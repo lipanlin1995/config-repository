@@ -19,7 +19,7 @@ spring:
     minIdle: 1
     connectionTimeout: 10000
     
-#kafka消息中间件
+#kafka消息中间件(消费者)
   kafka:
     consumer:
       servers: 10.202.161.190:9092,10.202.161.191:9092,10.202.161.192:9092
