@@ -17,8 +17,6 @@ spring:
       uri: http://localhost:8888/
       lable: master
       profile: ${spring.profiles.active}
-
-#数据库连接配置
   dataSource:
     url: jdbc:oracle:thin:@ordb.dev.bl.com:1521:devdb  
     username: product  
