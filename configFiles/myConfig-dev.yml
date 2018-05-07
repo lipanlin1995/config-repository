@@ -6,6 +6,18 @@ logging:
     com.bailian: INFO
     org.springframework: INFO
 
+#应用名称、环境配置  
+spring:
+  application:
+    name: myConfig
+  profiles:
+    active: dev	
+  cloud: 
+    config: 
+      uri: http://localhost:8888/
+      lable: master
+      profile: ${spring.profiles.active}
+
 #kafka消息中间件
   kafka:
     consumer:
