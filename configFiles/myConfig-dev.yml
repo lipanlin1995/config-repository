@@ -6,17 +6,7 @@ logging:
     com.bailian: INFO
     org.springframework: INFO
 
-#应用名称、环境配置  
-spring:
-  application:
-    name: myConfig
-  profiles:
-    active: dev	
-  cloud: 
-    config: 
-      uri: http://localhost:8888/
-      lable: master
-      profile: ${spring.profiles.active}
+#数据库配置
   dataSource:
     url: jdbc:oracle:thin:@ordb.dev.bl.com:1521:devdb  
     username: product  
